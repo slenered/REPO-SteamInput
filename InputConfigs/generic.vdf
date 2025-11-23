@@ -1,0 +1,1455 @@
+"controller_mappings"
+{
+	"version"		"3"
+	"revision"		"91"
+	"title"		"Generic Controller (SteamInput Mod)"
+	"description"		"A control scheme for generic controllers using the SteamInput Mod for R.E.P.O."
+	"export_type"		"personal_local"
+	"controller_type"		"controller_generic"
+	"controller_caps"		"23117823"
+	"major_revision"		"0"
+	"minor_revision"		"0"
+	"Timestamp"		"1763858734"
+	"actions"
+	{
+		"GameControls"
+		{
+			"title"		"#REPO_Controller"
+			"legacy_set"		"0"
+			"StickPadGyro"
+			{
+				"Move"
+				{
+					"title"		"#Action_Move"
+					"input_mode"		"joystick_move"
+				}
+				"Camera"
+				{
+					"title"		"#Action_Camera"
+					"input_mode"		"absolute_mouse"
+				}
+				"ItemDistance"
+				{
+					"title"		"#Action_ItemDistance"
+					"input_mode"		"joystick_move"
+				}
+				"ItemRotate"
+				{
+					"title"		"#Action_ItemRotate"
+					"input_mode"		"absolute_mouse"
+				}
+			}
+			"Button"
+			{
+				"Interact"		"#Action_Interact"
+				"Chat"		"#Action_Chat"
+				"ToggleMute"		"#Action_ToggleMute"
+				"PushToTalk"		"#Action_PushToTalk"
+				"Jump"		"#Action_Jump"
+				"Crouch"		"#Action_Crouch"
+				"Sprint"		"#Action_Sprint"
+				"Grab"		"#Action_Grab"
+				"Rotate"		"#Action_Rotate"
+				"Push"		"#Action_Push"
+				"Pull"		"#Action_Pull"
+				"PushPullLayer"		"#Action_PushPullLayer"
+				"Tumble"		"#Action_Tumble"
+				"ExpressionNone"		"#Action_None"
+				"Expression1"		"#Action_Expression1"
+				"Expression2"		"#Action_Expression2"
+				"Expression3"		"#Action_Expression3"
+				"Expression4"		"#Action_Expression4"
+				"Expression5"		"#Action_Expression5"
+				"Expression6"		"#Action_Expression6"
+				"Inventory1"		"#Action_Inventory1"
+				"Inventory2"		"#Action_Inventory2"
+				"Inventory3"		"#Action_Inventory3"
+				"Map"		"#Action_Map"
+				"pause_menu"		"#Action_Menu"
+			}
+		}
+		"SpectatorControls"
+		{
+			"title"		"#REPO_Spectator"
+			"legacy_set"		"0"
+			"StickPadGyro"
+			{
+				"zoom"
+				{
+					"title"		"#Action_Zoom"
+					"input_mode"		"joystick_move"
+				}
+				"Camera"
+				{
+					"title"		"#Action_Camera"
+					"input_mode"		"absolute_mouse"
+				}
+			}
+			"Button"
+			{
+				"Chat"		"#Action_Chat"
+				"ToggleMute"		"#Action_ToggleMute"
+				"PushToTalk"		"#Action_PushToTalk"
+				"Interact"		"#Action_ActivateHead"
+				"SpectateNext"		"#Action_SpectateNext"
+				"SpectatePrevious"		"#Action_SpectatePrevious"
+				"pause_menu"		"#Action_Menu"
+			}
+		}
+		"MenuControls"
+		{
+			"title"		"#Set_Menu"
+			"legacy_set"		"0"
+			"StickPadGyro"
+			{
+				"menu_scroll"
+				{
+					"title"		"#Menu_Scroll"
+					"input_mode"		"joystick_move"
+				}
+			}
+			"Button"
+			{
+				"ToggleMute"		"#Action_ToggleMute"
+				"PushToTalk"		"#Action_PushToTalk"
+				"Chat"		"#Action_Chat"
+				"menu_up"		"#Menu_Up"
+				"menu_down"		"#Menu_Down"
+				"menu_left"		"#Menu_Left"
+				"menu_right"		"#Menu_Right"
+				"menu_select"		"#Menu_Select"
+				"menu_cancel"		"#Menu_Cancel"
+				"pause_menu"		"#Action_ReturnToGame"
+			}
+		}
+	}
+	"action_layers"
+	{
+		"ItemDistanceLayer"
+		{
+			"title"		"#Layer_ItemDistance"
+			"legacy_set"		"0"
+			"set_layer"		"1"
+			"parent_set_name"		"GameControls"
+		}
+		"ItemRotateLayer"
+		{
+			"title"		"#Layer_ItemRotate"
+			"legacy_set"		"0"
+			"set_layer"		"1"
+			"parent_set_name"		"GameControls"
+		}
+	}
+	"localization"
+	{
+		"english"
+		{
+			"REPO_Controller"		"Game Controls"
+			"Set_Menu"		"Menu Controls"
+			"REPO_Spectator"		"Spectator Controls"
+			"Layer_ItemDistance"		"Item Distance Layer"
+			"Layer_ItemRotate"		"Item Rotate Layer"
+			"Action_Interact"		"Interact"
+			"Action_ActivateHead"		"Activate Head"
+			"Action_Chat"		"Chat"
+			"Action_ToggleMute"		"Toggle Mute"
+			"Action_PushToTalk"		"Push To Talk"
+			"Action_Jump"		"Jump"
+			"Action_Crouch"		"Crouch"
+			"Action_Sprint"		"Sprint"
+			"Action_Grab"		"Grab"
+			"Action_Rotate"		"Rotate"
+			"Action_Push"		"Push"
+			"Action_Pull"		"Pull"
+			"Action_PushPullLayer"		"Activate Push and Pull Layer"
+			"Action_Tumble"		"Tumble"
+			"Action_Inventory1"		"Inventory 1"
+			"Action_Inventory2"		"Inventory 2"
+			"Action_Inventory3"		"Inventory 3"
+			"Action_Map"		"Map"
+			"Action_Menu"		"Pause Menu"
+			"Action_SpectateNext"		"Spectate Next"
+			"Action_SpectatePrevious"		"Spectate Previous"
+			"Action_Zoom"		"Spectate Zoom"
+			"Action_None"		"Expression None"
+			"Action_Expression1"		"Expression Angry"
+			"Action_Expression2"		"Expression Sad"
+			"Action_Expression3"		"Expression Suspicious"
+			"Action_Expression4"		"Expression Eyes Closed"
+			"Action_Expression5"		"Expression Crazy"
+			"Action_Expression6"		"Expression Happy"
+			"Action_Move"		"Movement"
+			"Action_Camera"		"Camera"
+			"Action_ItemDistance"		"Item Distance"
+			"Action_ItemRotate"		"Item Rotate"
+			"Action_ReturnToGame"		"Return To Game"
+			"menu_up"		"Menu Up"
+			"menu_down"		"Menu Down"
+			"menu_left"		"Menu Left"
+			"menu_right"		"Menu Right"
+			"menu_select"		"Menu Select"
+			"menu_cancel"		"Menu Cancel"
+			"menu_scroll"		"Menu Scroll"
+		}
+	}
+	"group"
+	{
+		"id"		"1"
+		"mode"		"four_buttons"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"button_a"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Jump, Jump, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_b"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls ToggleMute, Toggle Mute, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_x"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Interact, Interact, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_y"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Chat, Chat, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"2"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"edge"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Sprint, Sprint, , "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"3"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"edge"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Grab, Grab, , "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"5"
+		"mode"		"four_buttons"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"button_a"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_select, Menu Select, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_b"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_cancel, Menu Cancel, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_x"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls ToggleMute, Toggle Mute, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_y"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls Chat, Chat, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"6"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+	}
+	"group"
+	{
+		"id"		"7"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+	}
+	"group"
+	{
+		"id"		"12"
+		"mode"		"dpad"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"dpad_north"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Inventory2, Inventory 2, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_east"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Inventory3, Inventory 3, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_west"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Inventory1, Inventory 1, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"requires_click"		"0"
+			"haptic_intensity_override"		"0"
+		}
+	}
+	"group"
+	{
+		"id"		"13"
+		"mode"		"joystick_mouse"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Crouch, Crouch, , "
+						}
+						"settings"
+						{
+							"toggle"		"1"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+			"output_joystick"		"2"
+		}
+		"gameactions"
+		{
+			"GameControls"		"Camera"
+		}
+	}
+	"group"
+	{
+		"id"		"14"
+		"mode"		"joystick_move"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"click"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Rotate, Rotate, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+		}
+		"gameactions"
+		{
+			"GameControls"		"Move"
+		}
+	}
+	"group"
+	{
+		"id"		"17"
+		"mode"		"four_buttons"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"18"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"19"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"20"
+		"mode"		"dpad"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"dpad_north"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_up, Menu Up, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_south"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_down, Menu Down, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_east"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_right, Menu Right, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_west"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_left, Menu Left, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"requires_click"		"0"
+			"haptic_intensity_override"		"0"
+		}
+	}
+	"group"
+	{
+		"id"		"22"
+		"mode"		"dpad"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"dpad_north"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_up, Menu Up, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_south"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_down, Menu Down, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_east"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_right, Menu Right, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_west"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls menu_left, Menu Left, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"requires_click"		"0"
+		}
+	}
+	"group"
+	{
+		"id"		"24"
+		"mode"		"four_buttons"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"button_b"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls ToggleMute, Toggle Mute, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_x"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls Interact, Activate Head, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_y"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls Chat, Chat, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"27"
+		"mode"		"joystick_move"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+		}
+		"gameactions"
+		{
+			"MenuControls"		"menu_scroll"
+		}
+	}
+	"group"
+	{
+		"id"		"28"
+		"mode"		"joystick_mouse"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+			"output_joystick"		"2"
+		}
+		"gameactions"
+		{
+			"SpectatorControls"		"Camera"
+		}
+	}
+	"group"
+	{
+		"id"		"29"
+		"mode"		"joystick_move"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+		}
+		"gameactions"
+		{
+			"SpectatorControls"		"zoom"
+		}
+	}
+	"group"
+	{
+		"id"		"31"
+		"mode"		"joystick_move"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"virtual_mode"		"1"
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"GameControls"		"ItemDistance"
+		}
+	}
+	"group"
+	{
+		"id"		"33"
+		"mode"		"four_buttons"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"34"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"35"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"44"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"edge"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls SpectateNext, Spectate Next, , "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"45"
+		"mode"		"trigger"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"edge"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls SpectatePrevious, Spectate Previous, , "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"46"
+		"mode"		"radial_menu"
+		"name"		"Expressions"
+		"description"		""
+		"inputs"
+		{
+			"touch_menu_button_1"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls ExpressionNone, Expression None, @Expression_None.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_2"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Expression1, Expression Angry, @Expression_Angry.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_3"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Expression2, Expression Sad, @Expression_Sad.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_4"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Expression3, Expression Suspicious, @Expression_Suspicious.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_5"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Expression4, Expression Eyes Closed, @Expression_Eyes_Closed.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_6"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Expression5, Expression Crazy, @Expression_Crazy.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_7"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Expression6, Expression Happy, @Expression_Happy.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+		"settings"
+		{
+			"touchmenu_button_fire_type"		"0"
+		}
+	}
+	"group"
+	{
+		"id"		"48"
+		"mode"		"reference"
+		"description"		""
+		"settings"
+		{
+			"referenced_mode"		"46"
+		}
+	}
+	"group"
+	{
+		"id"		"55"
+		"mode"		"joystick_mouse"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+		"gameactions"
+		{
+			"GameControls"		"ItemRotate"
+		}
+	}
+	"group"
+	{
+		"id"		"0"
+		"mode"		"switches"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"button_escape"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls pause_menu, Pause Menu, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_menu"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Map, Map, , "
+						}
+						"settings"
+						{
+							"toggle"		"1"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"left_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls PushPullLayer, Activate Push and Pull Layer, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"right_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action GameControls Tumble, Tumble, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"dpad_south"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"mode_shift right_joystick 48"
+							"binding"		"mode_shift right_joystick 58"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"4"
+		"mode"		"switches"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"button_escape"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action MenuControls pause_menu, Return To Game, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"16"
+		"mode"		"switches"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"23"
+		"mode"		"switches"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+			"button_escape"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls pause_menu, Pause Menu, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"left_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls SpectatePrevious, Spectate Previous, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"right_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"game_action SpectatorControls SpectateNext, Spectate Next, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+		}
+	}
+	"group"
+	{
+		"id"		"32"
+		"mode"		"switches"
+		"name"		""
+		"description"		""
+		"inputs"
+		{
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"preset"
+	{
+		"id"		"0"
+		"name"		"GameControls"
+		"group_source_bindings"
+		{
+			"0"		"switch active"
+			"13"		"right_joystick active"
+			"48"		"right_joystick active modeshift"
+			"1"		"button_diamond active"
+			"2"		"left_trigger active"
+			"3"		"right_trigger active"
+			"14"		"joystick active"
+			"12"		"dpad active"
+		}
+	}
+	"preset"
+	{
+		"id"		"1"
+		"name"		"SpectatorControls"
+		"group_source_bindings"
+		{
+			"23"		"switch active"
+			"28"		"right_joystick active"
+			"24"		"button_diamond active"
+			"45"		"left_trigger active"
+			"44"		"right_trigger active"
+			"29"		"joystick active"
+		}
+	}
+	"preset"
+	{
+		"id"		"2"
+		"name"		"MenuControls"
+		"group_source_bindings"
+		{
+			"4"		"switch active"
+			"27"		"right_joystick active"
+			"5"		"button_diamond active"
+			"6"		"left_trigger active"
+			"7"		"right_trigger active"
+			"22"		"joystick active"
+			"20"		"dpad active"
+		}
+	}
+	"preset"
+	{
+		"id"		"3"
+		"name"		"ItemDistanceLayer"
+		"group_source_bindings"
+		{
+			"16"		"switch active"
+			"31"		"right_joystick active"
+			"17"		"button_diamond active"
+			"18"		"left_trigger active"
+			"19"		"right_trigger active"
+		}
+	}
+	"preset"
+	{
+		"id"		"4"
+		"name"		"ItemRotateLayer"
+		"group_source_bindings"
+		{
+			"32"		"switch active"
+			"55"		"right_joystick active"
+			"33"		"button_diamond active"
+			"34"		"left_trigger active"
+			"35"		"right_trigger active"
+		}
+	}
+	"settings"
+	{
+	}
+}
