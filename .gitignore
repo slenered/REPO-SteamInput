@@ -1,0 +1,8 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+/REPO SteamInput/Data.tar.gz.bak
+/libs/
+/REPO SteamInput/SteamInerface.tar.gz.bak
